@@ -8,7 +8,7 @@ import BookingConsultation from './Components/BookingConsultation';
 import InstantConsultation from './Components/InstantConsultation/InstantConsultation';
 import LandingPage from './Landing_Page/LandingPage';
 import GiveReviews from './Components/GiveReviews/GiveReviews';
-
+import ProfileCard from './Components/ProfileCard/ProfileCard';
 import './App.css';
 
 function App() {
@@ -21,6 +21,7 @@ function App() {
           <Route path="/" element={<LandingPage />} />
           <Route path="/signup" element={<SignUp />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/profile" element={<ProfileCard />} />
 <Route path="/reviews" element={<GiveReviews />} />
           <Route
             path="/appointments"
