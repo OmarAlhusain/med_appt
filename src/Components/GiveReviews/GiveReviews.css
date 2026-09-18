@@ -1,0 +1,149 @@
+.reviews-page {
+  min-height: calc(100vh - 76px);
+  display: flex;
+  justify-content: center;
+  padding: 60px 20px;
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(15, 118, 110, 0.1),
+      transparent 30%
+    ),
+    #f4f7fa;
+}
+
+.reviews-card {
+  width: min(100%, 620px);
+  height: fit-content;
+  padding: 36px;
+  border: 1px solid #dbe4ee;
+  border-radius: 20px;
+  background: #f8fafc;
+  box-shadow: 0 22px 55px rgba(15, 23, 42, 0.08);
+}
+
+.reviews-heading {
+  margin-bottom: 28px;
+}
+
+.reviews-heading span {
+  display: inline-block;
+  margin-bottom: 8px;
+  color: #0f766e;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.reviews-heading h1 {
+  margin: 0;
+  color: #0f172a;
+  font-size: 32px;
+}
+
+.reviews-heading p {
+  margin: 10px 0 0;
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.reviews-form {
+  display: grid;
+  gap: 18px;
+}
+
+.review-field {
+  display: grid;
+  gap: 7px;
+}
+
+.review-field label {
+  color: #334155;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.review-field select,
+.review-field textarea {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  outline: none;
+  background: #f8fafc;
+  color: #0f172a;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.review-field textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.review-field select:focus,
+.review-field textarea:focus {
+  border-color: #0f766e;
+  box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.12);
+}
+
+.review-field select:disabled,
+.review-field textarea:disabled {
+  cursor: not-allowed;
+  background: #eef2f6;
+  color: #94a3b8;
+}
+
+.review-submit-button {
+  width: 100%;
+  margin: 0;
+  padding: 13px 18px;
+  border: 0;
+  border-radius: 10px;
+  background: #0f766e;
+  color: #f8fafc;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.review-submit-button:hover:not(:disabled) {
+  background: #115e59;
+}
+
+.review-submit-button:disabled {
+  cursor: not-allowed;
+  background: #94a3b8;
+}
+
+.review-message,
+.review-submitted-message {
+  padding: 11px 13px;
+  border-radius: 9px;
+  font-size: 13px;
+}
+
+.review-message {
+  border: 1px solid #bbf7d0;
+  background: #f0fdf4;
+  color: #166534;
+}
+
+.review-submitted-message {
+  border: 1px solid #bfdbfe;
+  background: #eff6ff;
+  color: #1d4ed8;
+}
+
+@media (max-width: 600px) {
+  .reviews-page {
+    padding: 32px 14px;
+  }
+
+  .reviews-card {
+    padding: 25px 20px;
+  }
+}
