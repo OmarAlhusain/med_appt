@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-
+import ReportsLayout from './Components/ReportsLayout/ReportsLayout';
 import Navbar from './Components/Navbar/Navbar';
 import Notification from './Components/Notification/Notification';
 import SignUp from './Components/Sign_Up/Sign_Up';
@@ -22,6 +22,7 @@ function App() {
           <Route path="/signup" element={<SignUp />} />
           <Route path="/login" element={<Login />} />
           <Route path="/profile" element={<ProfileCard />} />
+          <Route path="/reports" element={<ReportsLayout />} />
 <Route path="/reviews" element={<GiveReviews />} />
           <Route
             path="/appointments"
