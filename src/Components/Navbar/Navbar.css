@@ -1,0 +1,153 @@
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    background: rgba(248, 250, 252, 0.96);
+    border-bottom: 1px solid #dbe4ee;
+    backdrop-filter: blur(12px);
+  }
+  
+  .navbar {
+    width: min(1180px, calc(100% - 40px));
+    min-height: 76px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+  }
+  
+  .navbar-brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    color: #0f172a;
+    text-decoration: none;
+  }
+  
+  .brand-mark {
+    width: 42px;
+    height: 42px;
+    display: grid;
+    place-items: center;
+    border-radius: 12px;
+    background: #0f766e;
+    color: #f8fafc;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1;
+  }
+  
+  .brand-copy {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+  }
+  
+  .brand-copy strong {
+    font-size: 19px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+  
+  .brand-copy small {
+    margin-top: 5px;
+    color: #64748b;
+    font-size: 11px;
+    font-weight: 500;
+  }
+  
+  .navbar-links {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .nav-link,
+  .nav-button,
+  .logout-button {
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  .nav-link {
+    padding: 10px 13px;
+    border-radius: 9px;
+    color: #334155;
+    text-decoration: none;
+    transition:
+      background-color 0.2s ease,
+      color 0.2s ease;
+  }
+  
+  .nav-link:hover {
+    background: #e8f3f2;
+    color: #0f766e;
+  }
+  
+  .nav-button {
+    margin-left: 4px;
+    padding: 11px 18px;
+    border-radius: 10px;
+    background: #0f766e;
+    color: #f8fafc;
+    text-decoration: none;
+    transition:
+      transform 0.2s ease,
+      background-color 0.2s ease;
+  }
+  
+  .nav-button:hover {
+    background: #115e59;
+    transform: translateY(-1px);
+  }
+  
+  .logout-button {
+    margin-left: 4px;
+    padding: 10px 17px;
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    background: #f8fafc;
+    color: #334155;
+    cursor: pointer;
+    transition:
+      border-color 0.2s ease,
+      color 0.2s ease,
+      background-color 0.2s ease;
+  }
+  
+  .logout-button:hover {
+    border-color: #0f766e;
+    background: #e8f3f2;
+    color: #0f766e;
+  }
+  
+  @media (max-width: 760px) {
+    .navbar {
+      width: min(100% - 24px, 1180px);
+      min-height: auto;
+      padding: 14px 0;
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 14px;
+    }
+  
+    .navbar-links {
+      width: 100%;
+      flex-wrap: wrap;
+    }
+  
+    .nav-link,
+    .nav-button,
+    .logout-button {
+      flex: 1 1 auto;
+      text-align: center;
+    }
+  
+    .nav-button,
+    .logout-button {
+      margin-left: 0;
+    }
+  }
