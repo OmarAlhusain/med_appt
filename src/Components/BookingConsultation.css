@@ -1,0 +1,68 @@
+.booking-page {
+  min-height: calc(100vh - 76px);
+  padding-bottom: 70px;
+  background: #f4f7fa;
+}
+
+.doctor-results {
+  width: min(920px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+.doctor-results-header {
+  margin: 15px 0 22px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.doctor-results-header span {
+  display: block;
+  margin-bottom: 5px;
+  color: #0f766e;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.doctor-results-header h2 {
+  margin: 0;
+  color: #0f172a;
+  font-size: 23px;
+}
+
+.doctor-results-header > strong {
+  flex: 0 0 auto;
+  padding: 7px 11px;
+  border-radius: 999px;
+  background: #e8f3f2;
+  color: #0f766e;
+  font-size: 12px;
+}
+
+.doctor-results-grid {
+  display: grid;
+  gap: 16px;
+}
+
+.no-doctors-message {
+  padding: 42px 20px;
+  border: 1px dashed #cbd5e1;
+  border-radius: 16px;
+  background: #f8fafc;
+  color: #64748b;
+  text-align: center;
+}
+
+@media (max-width: 650px) {
+  .doctor-results {
+    width: min(100% - 28px, 920px);
+  }
+
+  .doctor-results-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

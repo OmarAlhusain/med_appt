@@ -1,0 +1,105 @@
+.instant-form-card {
+  width: min(100%, 500px);
+  padding: 30px;
+  border: 1px solid #dbe4ee;
+  border-radius: 20px;
+  background: #f8fafc;
+  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.12);
+}
+
+.instant-form-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 18px;
+  margin-bottom: 24px;
+}
+
+.instant-form-header span {
+  display: block;
+  margin-bottom: 5px;
+  color: #0f766e;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.instant-form-header h2 {
+  margin: 0;
+  color: #0f172a;
+  font-size: 25px;
+}
+
+.instant-close-button {
+  width: 36px;
+  height: 36px;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #dbe4ee;
+  border-radius: 9px;
+  background: #f8fafc;
+  color: #475569;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.instant-consultation-form {
+  display: grid;
+  gap: 18px;
+}
+
+.instant-field {
+  display: grid;
+  gap: 7px;
+}
+
+.instant-field label {
+  color: #334155;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.instant-field input {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  outline: none;
+  background: #f8fafc;
+  color: #0f172a;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.instant-field input:focus {
+  border-color: #0f766e;
+  box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.12);
+}
+
+.instant-form-error {
+  padding: 11px 13px;
+  border: 1px solid #fecaca;
+  border-radius: 9px;
+  background: #fef2f2;
+  color: #b91c1c;
+  font-size: 13px;
+}
+
+.instant-submit-button {
+  width: 100%;
+  margin: 0;
+  padding: 13px 18px;
+  border: 0;
+  border-radius: 10px;
+  background: #0f766e;
+  color: #f8fafc;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.instant-submit-button:hover {
+  background: #115e59;
+}
