@@ -1,16 +1,90 @@
-# React + Vite
+# StayHealthy - Medical Appointment Booking Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+StayHealthy is a React-based healthcare application that allows patients to register, log in, search for doctors, book appointments, manage their profile, submit reviews, receive appointment notifications, and access medical reports.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Patient registration and login
+- Doctor search by specialty
+- Appointment booking
+- Appointment cancellation
+- Instant consultation booking
+- Appointment notifications
+- Patient profile management
+- Doctor reviews and ratings
+- Medical reports and prescription PDF
+- Responsive user interface
 
-## React Compiler
+## Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- Vite
+- React Router
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+- JSON Web Token authentication
 
-## Expanding the ESLint configuration
+## Project Setup
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Clone the repository:
+
+`git clone https://github.com/OmarAlhusain/med_appt.git`
+
+Navigate to the project directory:
+
+`cd med_appt`
+
+Install frontend dependencies:
+
+`npm install`
+
+Install backend dependencies:
+
+`cd server`
+
+`npm install`
+
+`cd ..`
+
+Create the required backend environment variables in:
+
+`server/.env`
+
+Example variables:
+
+`MONGO_URI=your_mongodb_connection_string`
+
+`JWT_SECRET=your_jwt_secret`
+
+Start the backend server:
+
+`cd server`
+
+`node index`
+
+Start the frontend development server in another terminal:
+
+`npm run dev`
+
+## Production Build
+
+Create a production build with:
+
+`npm run build`
+
+## Main Application Routes
+
+- `/` - Home
+- `/signup` - Sign Up
+- `/login` - Login
+- `/appointments` - Find Doctors and Book Appointments
+- `/instant-consultation` - Instant Consultation
+- `/reviews` - Give Reviews
+- `/profile` - Patient Profile
+- `/reports` - Medical Reports
+
+## Repository
+
+https://github.com/OmarAlhusain/med_appt
