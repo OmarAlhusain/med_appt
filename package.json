@@ -5,9 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build --outDir server/build --emptyOutDir",
     "lint": "eslint .",
-    "preview": "vite build && vite preview --host"
+    "preview": "vite build && vite preview --host",
+    "start": "vite"
   },
   "dependencies": {
     "react": "^19.2.8",

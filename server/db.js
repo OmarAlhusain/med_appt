@@ -1,5 +1,9 @@
 const mongoose = require('mongoose');
-require('dotenv').config();
+const path = require('path');
+
+require('dotenv').config({
+    path: path.join(__dirname, '.env'),
+});
 
 const mongoURI = process.env.MONGO_URI;
 
@@ -8,7 +12,10 @@ const connectToMongo = async (retryCount) => {
     const count = retryCount ?? 0;
 
     try {
-        await mongoose.connect(mongoURI, { dbName: 'stayhealthybeta1' });
+        await mongoose.connect(mongoURI, {
+            dbName: 'stayhealthybeta1',
+        });
+
         console.info('Connected to Mongo Successfully');
         return;
     } catch (error) {
@@ -20,7 +27,10 @@ const connectToMongo = async (retryCount) => {
             throw new Error('Unable to connect to Mongo!');
         }
 
-        console.info(`Retrying, retry count: ${nextRetryCount}`);
+        console.info(
+            `Retrying, retry count: ${nextRetryCount}`
+        );
+
         return await connectToMongo(nextRetryCount);
     }
 };

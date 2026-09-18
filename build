@@ -1,0 +1,23 @@
+$ npm run build
+
+> med_appt@0.0.0 build
+> vite build --outDir server/build --emptyOutDir
+
+vite v8.3.0 building client environment for production...
+transforming...
+✓ 54 modules transformed.
+rendering chunks...
+computing gzip size...
+server/build/index.html                   1.90 kB │ gzip:  0.73 kB
+server/build/assets/index-F4OsvsQr.css   26.80 kB │ gzip:  4.66 kB
+server/build/assets/index-ChQLSLxv.js   289.38 kB │ gzip: 88.56 kB
+
+✓ built in 287ms
+
+$ ls -lrt server/build
+total 32
+-rw-r--r-- 1 theia users 3324 Sep 18 13:59 patient_report.pdf
+-rw-r--r-- 1 theia users 5031 Sep 18 13:59 icons.svg
+-rw-r--r-- 1 theia users 9522 Sep 18 13:59 favicon.svg
+-rw-r--r-- 1 theia users 1908 Sep 18 13:59 index.html
+drwxr-sr-x 2 theia users 4096 Sep 18 13:59 assets
